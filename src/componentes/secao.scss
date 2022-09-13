@@ -1,0 +1,22 @@
+.page-secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+
+        background-color: azure;
+    }
+
+    .container-secoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
