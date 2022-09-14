@@ -1,8 +1,8 @@
 
 import './secao.scss'
-import Card from './comps/cardSecao/cardsecao'
+import Card from '../comps/cardSecao/cardsecao'
 
-export default function Secao() {
+export default function Secao(props) {
     return(
         <main className='page-secao'>
             <div className='container-header'>
@@ -11,11 +11,11 @@ export default function Secao() {
 
             <div className='container-secoes'>
 
-                <Card />
+                <Card secao = '1' classe = 'container-text1' />
 
-                <Card />
+                <Card secao = '2' classe = 'container-text2' />
                 
-                <Card />
+                <Card teste='final-secao' secao = '3' classe = 'container-text3' />
 
             </div>
 

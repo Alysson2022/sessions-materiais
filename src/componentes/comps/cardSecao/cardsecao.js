@@ -1,22 +1,16 @@
 
 import './cardsecao.scss'
 
-export default function CardSecao() {
+export default function CardSecao(props) {
     return(
-        <main className="container-card">
-
-
             <div className='container-secao'>
-                    <h3>Seção 01</h3>
+                    <h3 className={props.teste}>Seção {props.secao}</h3>
 
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex odio, varius non maximus at, consectetur non purus. Ut nec ullamcorper nisl, non porttitor dui.</p>
+                    <div className={props.classe}>
+                        <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex odio, varius non maximus at, consectetur non purus. Ut nec ullamcorper nisl, non porttitor dui.</p>
 
-                        <img src='/assets/images/Group 63.svg' alt='cores' />
+                        <img className='img-cores' src='/assets/images/Group 63.svg' alt='cores' />
                     </div>
             </div>
-
-
-        </main>
     )
 }
